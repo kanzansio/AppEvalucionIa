@@ -33,9 +33,9 @@ export default function Landing({ onStart }){
             marginBottom: 16
           }}>
             ¿Qué tan preparada está tu{' '}
-            <span style={{ color: '5bb878' }}>área de ventas</span>{' '}
+            <span style={{ color: '#2563eb' }}>área de ventas</span>{' '}
             para la{' '}
-            <span style={{ color: '#5bb878' }}>IA</span>?
+            <span style={{ color: '#2563eb' }}>IA</span>?
           </h1>
           <p style={{ 
             color: 'var(--muted)', 
@@ -200,24 +200,10 @@ export default function Landing({ onStart }){
             fontWeight: 600, 
             color: 'var(--text)'
           }}>
-           <strong>Aldo Malpica</strong> • Fundador de Iven Academy
+            María González, Head of Sales - TechCorp
           </div>
         </div>
       </div>
     </div>
   )
 }
-  <div style={{
-        position: 'absolute',
-        bottom: '20px',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        fontSize: '11px',
-        color: 'rgba(255,255,255,0.5)',
-        textAlign: 'center',
-        lineHeight: 1.4
-      }}>
-      
-        Programado y diseñado por <strong>Kanzansio.digital</strong> • Powered by IA
-      </div>
-    </div>
