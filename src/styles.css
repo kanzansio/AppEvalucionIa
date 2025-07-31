@@ -4,10 +4,12 @@
   --card: #ffffff;
   --text: #0f172a;
   --muted: #64748b;
-  --primary: #2563eb;
-  --accent: #0ea5e9;
+  --primary: #5bb878; /* Verde IVen */
+  --primary-dark: #4a9862;
+  --secondary: #1e3a5f; /* Azul oscuro IVen */
+  --accent: #7ed99a; /* Verde claro */
   --border: #e2e8f0;
-  --ok: #10b981;
+  --ok: #5bb878;
   --warn: #f59e0b;
   --bad: #ef4444;
   --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -27,7 +29,7 @@ html, body, #root {
 }
 
 body { 
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #5bb878 0%, #1e3a5f 100%);
   min-height: 100vh;
 }
 
@@ -58,11 +60,12 @@ body {
 }
 
 .hero { 
-  min-height: 90vh; 
+  min-height: 100vh; 
   display: flex; 
   align-items: center; 
   justify-content: center;
   padding: 40px 20px;
+  position: relative;
 }
 
 .hero .card {
@@ -97,7 +100,7 @@ body {
 }
 
 .btn:hover {
-  background: #1d4ed8;
+  background: var(--primary-dark);
   transform: translateY(-1px);
 }
 
@@ -139,7 +142,7 @@ body {
 .input:focus, .select:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  box-shadow: 0 0 0 3px rgba(91, 184, 120, 0.1);
 }
 
 .label { 
@@ -200,8 +203,8 @@ body {
 
 .question.selected { 
   border-color: var(--primary); 
-  background: #eff6ff; 
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  background: #f0fdf4; 
+  box-shadow: 0 0 0 3px rgba(91, 184, 120, 0.1);
 }
 
 .badge { 
@@ -230,8 +233,8 @@ body {
 
 .badge.status-avanzado {
   background: #dbeafe;
-  border-color: #3b82f6;
-  color: #2563eb;
+  border-color: #1e3a5f;
+  color: #1e3a5f;
 }
 
 .kpi { 
@@ -288,7 +291,7 @@ body {
 
 /* Nuevos estilos para mejorar el análisis */
 .results-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #5bb878 0%, #1e3a5f 100%);
   color: white;
   padding: 32px;
   border-radius: 16px;
@@ -473,6 +476,15 @@ body {
 .area-analysis-card:nth-child(3) { animation-delay: 0.3s; }
 .area-analysis-card:nth-child(4) { animation-delay: 0.4s; }
 
+/* Assessment container full height */
+.assessment-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
 /* Pattern identificados styling */
 .patterns-section {
   background: #f8fafc;
@@ -519,4 +531,11 @@ body {
   font-weight: 600;
   color: var(--text);
   font-size: 14px;
+}
+
+/* Hide elements from PDF */
+@media print {
+  .no-print {
+    display: none !important;
+  }
 }
