@@ -1,5 +1,5 @@
 {
-  "name": "cuestionario-mejorado",
+  "name": "ia-ventas-pro",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -14,7 +14,7 @@
     "recharts": "^2.12.7",
     "jspdf": "^2.5.1",
     "html2canvas": "^1.4.1",
-    "gsap": "^3.12.5"
+    "gsap": "^3.13.5"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
